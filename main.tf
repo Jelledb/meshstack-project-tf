@@ -6,6 +6,15 @@ variable "project_definitions" {
   }))
 }
 
+terraform {
+  required_providers {
+    meshstack = {
+      source = "meshcloud/meshstack"
+      version = "0.7.1"
+    }
+  }
+}
+
 provider "meshstack" {}
 
 resource "meshstack_project" "projects" {
