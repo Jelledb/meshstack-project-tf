@@ -32,6 +32,9 @@ resource "meshstack_project" "projects" {
     tags = {
       "Confidentiality" = [
         "Public"
+      ],
+      "environment" = [
+        "dev"
       ]
     }
   }
